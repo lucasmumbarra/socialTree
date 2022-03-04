@@ -1,0 +1,152 @@
+:root {
+  --body-bg-color: #FAF7FD;
+  --purple: #BB99DD;
+  --purple-hover: #ad5cff;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background: var(--body-bg-color);
+}
+
+main {
+  width: 100vw;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profilePhoto {
+  width: 13.5625rem;
+  height: 13.5625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 2px solid var(--purple);
+  border-radius: 100%;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.profilePhoto img {
+  width: 12.875rem;
+  height: 12.875rem;
+  border-radius: 100%;
+}
+
+.profile a {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  margin-top: .9375rem;
+  color: var(--purple);
+  transition: all .3s ease-in-out;
+}
+
+.profile a:hover {
+  color: var(--purple-hover);
+}
+
+.linksContainer {
+  margin-top: 2.0625rem;
+}
+
+.links {
+  width: 20.375rem;
+  height: 3.0625rem;
+  border: 2px solid var(--purple);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  transition: all .3s ease-in-out;
+}
+
+.links:hover {
+  border: 2px solid var(--purple-hover);
+}
+
+.links a {
+  width: 19.25rem;
+  height: 2.8125rem;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--purple);
+  transition: all .3s ease-in-out;
+}
+
+.links a:hover{
+  color: var(--purple-hover);
+}
+
+.socialContainer {
+  margin-top: 4.25rem;
+}
+
+.social {
+  width: 14.75rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+.social a img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media screen and (max-width:425px) {
+  .profilePhoto {
+    width: 13.3125rem;
+    height: 13.3125rem;
+  }
+  
+  .profilePhoto img {
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+
+  .linksContainer {
+    margin-top: 1.4375rem;
+  }
+
+  .links {
+    width: 19.375rem;
+    height: 3.0625rem;
+    margin-bottom: 1rem;
+  }
+
+  .links a {
+    width: 19.25rem;
+    height: 2.8125rem;
+  }
+
+  .socialContainer {
+    margin-top: 1.125rem;
+  }
+}
